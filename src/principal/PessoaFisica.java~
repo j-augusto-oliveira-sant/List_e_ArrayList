@@ -1,0 +1,24 @@
+package principal;
+
+public class PessoaFisica extends Pessoa {
+	private String cpf;
+	public PessoaFisica(String nome,String cpf) {
+		super(nome);
+		this.setCpf(cpf);
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder value = new StringBuilder();
+		value.append(super.toString());
+		value.append("PessoaFisica [cpf=" + cpf + "]");
+		return value.toString();
+	}
+
+}
